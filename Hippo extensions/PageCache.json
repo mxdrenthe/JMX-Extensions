@@ -1,0 +1,459 @@
+{
+  "version": "1.0",
+  "name": "custom.jmx.hippo.page.cache",
+  "type": "JMX",
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "configUI": {
+    "displayName": "Hippo Page Cache JMX"
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "CacheHits",
+        "unit": "Count",
+        "displayname": "Cache hits",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "CacheHits",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "CacheMisses",
+        "unit": "Count",
+        "displayname": "Cache misses",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "CacheMisses",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "CacheHitRate",
+        "unit": "Percent",
+        "displayname": "Cache hit rate",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "CacheHitRate",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "FirstLevelCacheHits",
+        "unit": "Count",
+        "displayname": "First Level Cache Hits",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "FirstLevelCacheHits",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "FirstLevelCacheMisses",
+        "unit": "Count",
+        "displayname": "First Level Cache Misses",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "FirstLevelCacheMisses",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "FirstLevelCacheHitRate",
+        "unit": "Percent",
+        "displayname": "First Level Cache Hit Rate",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "FirstLevelCacheHitRate",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "SecondLevelCacheHits",
+        "unit": "Count",
+        "displayname": "Second Level Cache Hits",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "SecondLevelCacheHits",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "SecondLevelCacheMisses",
+        "unit": "Count",
+        "displayname": "Second Level Cache Misses",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "SecondLevelCacheMisses",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "SecondLevelCacheHitRate",
+        "unit": "Percent",
+        "displayname": "Second Level Cache Hit Rate",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "SecondLevelCacheHitRate",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StaleCacheHits",
+        "unit": "Count",
+        "displayname": "Stale Cache Hits",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StaleCacheHits",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StaleCacheMisses",
+        "unit": "Count",
+        "displayname": "Stale Cache Misses",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StaleCacheMisses",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StaleCacheHitRate",
+        "unit": "Percent",
+        "displayname": "Stale Cache Hit Rate",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Caching",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StaleCacheHitRate",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    }
+  ],
+  "ui": {
+    "charts": [
+      {
+        "group": "Hippo Cache JMX",
+        "title": "Overall Cache",
+        "series": [
+          {
+            "key": "CacheHits",
+            "displayname": "Cache hits",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#006600"
+          },
+          {
+            "key": "CacheMisses",
+            "displayname": "Cache misses",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#660000"
+          },
+          {
+            "key": "CacheHitRate",
+            "displayname": "Cache hit rate",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Cache JMX",
+        "title": "First Level Cache",
+        "series": [
+          {
+            "key": "FirstLevelCacheHits",
+            "displayname": "Cache hits",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#006600"
+          },
+          {
+            "key": "FirstLevelCacheMisses",
+            "displayname": "Cache misses",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#660000"
+          },
+          {
+            "key": "FirstLevelCacheHitRate",
+            "displayname": "Cache hit rate",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Cache JMX",
+        "title": "Second Level Cache",
+        "series": [
+          {
+            "key": "SecondLevelCacheHits",
+            "displayname": "Cache hits",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#006600"
+          },
+          {
+            "key": "SecondLevelCacheMisses",
+            "displayname": "Cache misses",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#660000"
+          },
+          {
+            "key": "SecondLevelCacheHitRate",
+            "displayname": "Cache hit rate",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Cache JMX",
+        "title": "Stale Cache",
+        "series": [
+          {
+            "key": "StaleCacheHits",
+            "displayname": "Cache hits",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#006600"
+          },
+          {
+            "key": "StaleCacheMisses",
+            "displayname": "Cache misses",
+            "seriestype": "bar",
+            "stacked": true,
+            "color": "#660000"
+          },
+          {
+            "key": "StaleCacheHitRate",
+            "displayname": "Cache hit rate",
+            "seriestype": "area"
+          }
+        ]
+      }
+    ]
+  }
+}

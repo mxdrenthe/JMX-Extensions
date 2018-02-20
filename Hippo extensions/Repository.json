@@ -1,0 +1,1407 @@
+{
+  "version": "1.0",
+  "name": "custom.jmx.hippo.repository",
+  "type": "JMX",
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "configUI": {
+    "displayName": "Hippo Repository Stat JMX"
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "DatabaseBundleGetDurationMillisAverageLastMinute",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Database Bundle Get Duration Millis Average Last Minute",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleGetDurationMillisAverageLastMinute",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleGetDurationMillisAverageLastHour",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Database Bundle Get Duration Millis Average Last Hour",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleGetDurationMillisAverageLastHour",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleGetDurationMillisAverageLastWeek",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Database Bundle Get Duration Millis Average Last Week",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleGetDurationMillisAverageLastWeek",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleGetAverageLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Database Bundle Get Average Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleGetAverageLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleGetAverageLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Database Bundle Get Average Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleGetAverageLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleGetAverageLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Database Bundle Get Average Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleGetAverageLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleWriteDurationMillisAverageLastMinute",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Database Bundle Write Duration Millis Average Last Minute",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleWriteDurationMillisAverageLastMinute",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleWriteDurationMillisAverageLastHour",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Database Bundle Write Duration Millis Average Last Hour",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleWriteDurationMillisAverageLastHour",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleWriteDurationMillisAverageLastWeek",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Database Bundle Write Duration Millis Average Last Week",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleWriteDurationMillisAverageLastWeek",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleWriteAverageLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Database Bundle Write Average Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleWriteAverageLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleWriteAverageLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Database Bundle Write Average Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleWriteAverageLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "DatabaseBundleWriteAverageLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Database Bundle Write Average Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "DatabaseBundleWriteAverageLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheMissLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Cache Miss Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheMissLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheMissLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Cache Miss Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheMissLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheMissLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Cache Miss Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheMissLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheHitLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Cache Hit Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheHitLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheHitLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Cache Hit Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheHitLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheHitLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Cache Hit Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheHitLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleCacheSizeMbLastHourAverage",
+        "unit": "MegaByte",
+        "displayname": "Hippo Bundle Cache Size Mb Last Hour Average",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleCacheSizeMbLastHourAverage",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleReadLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Read Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleReadLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleReadLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Read Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleReadLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "BundleReadLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Bundle Read Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "BundleReadLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryReadsLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Reads Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryReadsLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryReadsLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Reads Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryReadsLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryReadsLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Reads Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryReadsLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryReadDurationMillisAverageLastMinute",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Repository Read Duration Millis Average Last Minute",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryReadDurationMillisAverageLastMinute",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryReadDurationMillisAverageLastHour",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Repository Read Duration Millis Average Last Hour",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryReadDurationMillisAverageLastHour",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryReadDurationMillisAverageLastWeek",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Repository Read Duration Millis Average Last Week",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryReadDurationMillisAverageLastWeek",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryWritesLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Writes Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryWritesLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryWritesLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Writes Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryWritesLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryWritesLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Writes Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryWritesLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryWriteDurationMillisAverageLastMinute",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Repository Write Duration Millis Average Last Minute",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryWriteDurationMillisAverageLastMinute",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryWriteDurationMillisAverageLastHour",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Repository Write Duration Millis Average Last Hour",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryWriteDurationMillisAverageLastHour",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryWriteDurationMillisAverageLastWeek",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Repository Write Duration Millis Average Last Week",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryWriteDurationMillisAverageLastWeek",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryLoginsLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Logins Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryLoginsLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryLoginsLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Logins Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryLoginsLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositoryLoginsLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Repository Logins Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositoryLoginsLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositorySessionsLastMinuteAverage",
+        "unit": "Count",
+        "displayname": "Hippo Repository Sessions Last Minute Average",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositorySessionsLastMinuteAverage",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositorySessionsLastHourAverage",
+        "unit": "Count",
+        "displayname": "Hippo Repository Sessions Last Hour Average",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositorySessionsLastHourAverage",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RepositorySessionsLastWeekAverage",
+        "unit": "Count",
+        "displayname": "Hippo Repository Sessions Last Week Average",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RepositorySessionsLastWeekAverage",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "QueriesLastMinutePerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Queries Last Minute Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "QueriesLastMinutePerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "QueriesLastHourPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Queries Last Hour Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "QueriesLastHourPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "QueriesLastWeekPerSecond",
+        "unit": "PerSecond",
+        "displayname": "Hippo Queries Last Week Per Second",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "QueriesLastWeekPerSecond",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "QueryDurationMillisAverageLastMinute",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Query Duration Millis Average Last Minute",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "QueryDurationMillisAverageLastMinute",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "QueryDurationMillisAverageLastHour",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Query Duration Millis Average Last Hour",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "QueryDurationMillisAverageLastHour",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "QueryDurationMillisAverageLastWeek",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Query Duration Millis Average Last Week",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "org.hippoecm.repository",
+        "keyProperties": {
+          "name": "statistics",
+          "type": "Repository"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "QueryDurationMillisAverageLastWeek",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    }
+  ],
+  "ui": {
+    "charts": [
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Database Bundle Get Duration Millis",
+        "series": [
+          {
+            "key": "DatabaseBundleGetDurationMillisAverageLastMinute",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "DatabaseBundleGetDurationMillisAverageLastHour",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "DatabaseBundleGetDurationMillisAverageLastWeek",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Database Bundle Get Average",
+        "series": [
+          {
+            "key": "DatabaseBundleGetAverageLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "DatabaseBundleGetAverageLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "DatabaseBundleGetAverageLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Database Bundle Write Duration Millis",
+        "series": [
+          {
+            "key": "DatabaseBundleWriteDurationMillisAverageLastMinute",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "DatabaseBundleWriteDurationMillisAverageLastHour",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "DatabaseBundleWriteDurationMillisAverageLastWeek",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Database Bundle Write Average",
+        "series": [
+          {
+            "key": "DatabaseBundleWriteAverageLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "DatabaseBundleWriteAverageLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "DatabaseBundleWriteAverageLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Bundle Cache Miss",
+        "series": [
+          {
+            "key": "BundleCacheMissLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "BundleCacheMissLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "BundleCacheMissLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Bundle Cache Hit",
+        "series": [
+          {
+            "key": "BundleCacheHitLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "BundleCacheHitLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "BundleCacheHitLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Bundle Read",
+        "series": [
+          {
+            "key": "BundleReadLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "BundleReadLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "BundleReadLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Bundle Cache Size (MB)",
+        "series": [
+          {
+            "key": "BundleCacheSizeMbLastHourAverage",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Repository Reads",
+        "series": [
+          {
+            "key": "RepositoryReadsLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "RepositoryReadsLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "RepositoryReadsLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Repository Read Duration Millis",
+        "series": [
+          {
+            "key": "RepositoryReadDurationMillisAverageLastMinute",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "RepositoryReadDurationMillisAverageLastHour",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "RepositoryReadDurationMillisAverageLastWeek",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Repository Writes",
+        "series": [
+          {
+            "key": "RepositoryWritesLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "RepositoryWritesLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "RepositoryWritesLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Repository Write Duration Millis",
+        "series": [
+          {
+            "key": "RepositoryWriteDurationMillisAverageLastMinute",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "RepositoryWriteDurationMillisAverageLastHour",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "RepositoryWriteDurationMillisAverageLastWeek",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Repository Logins",
+        "series": [
+          {
+            "key": "RepositoryLoginsLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "RepositoryLoginsLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "RepositoryLoginsLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Repository Sessions",
+        "series": [
+          {
+            "key": "RepositorySessionsLastMinuteAverage",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "RepositorySessionsLastHourAverage",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "RepositorySessionsLastWeekAverage",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Queries",
+        "series": [
+          {
+            "key": "QueriesLastMinutePerSecond",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "QueriesLastHourPerSecond",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "QueriesLastWeekPerSecond",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Repository Stat JMX",
+        "title": "Query Duration Millis",
+        "series": [
+          {
+            "key": "QueryDurationMillisAverageLastMinute",
+            "displayname": "Last Minute",
+            "seriestype": "area",
+            "color": "#0000ff"
+          },
+          {
+            "key": "QueryDurationMillisAverageLastHour",
+            "displayname": "Last Hour",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "QueryDurationMillisAverageLastWeek",
+            "displayname": "Last Week",
+            "seriestype": "area",
+            "color": "#ff0000"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1574 @@
+{
+  "version": "1.0",
+  "name": "custom.jmx.hippo.targeting",
+  "type": "JMX",
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "configUI": {
+    "displayName": "Hippo Targeting Stat JMX"
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "SuccessfulStoreEntryCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Successful Store Entry Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "SuccessfulStoreEntryCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreEntryDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Store Request Log Average Store Entry Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreEntryDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreEntryDataBatchSize",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Average Store Entry Data Batch Size",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreEntryDataBatchSize",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveEntriesCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Retrieve Entries Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveEntriesCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageRetrieveEntriesDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Store Request Log Average Retrieve Entries Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageRetrieveEntriesDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveIntervalCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Retrieve Interval Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveIntervalCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageRetrieveIntervalDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Store Request Log Average Retrieve Interval Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageRetrieveIntervalDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreRequestLogRejectionCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Rejection Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreRequestLogRejectionCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreRequestLogTimeoutCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Timeout Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreRequestLogTimeoutCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreRequestLogOtherErrorCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Request Log Other Error Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "RequestLogStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreRequestLogOtherErrorCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreLocalPersonaAverageCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Local Persona Average Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "StatisticsStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreLocalPersonaAverageCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreLocalPersonaAverageDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Store Local Persona Average Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "StatisticsStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreLocalPersonaAverageDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveSharedPersonaAverageCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Shared Persona Average Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "StatisticsStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveSharedPersonaAverageCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageRetrieveSharedPersonaAvarageDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Retrieve Shared Persona Average Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "StatisticsStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageRetrieveSharedPersonaAvarageDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "SuccessfulStoreVisitorDataCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Successful Store Visitor Data Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "SuccessfulStoreVisitorDataCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreVisitorDataDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Store Visitor Data Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreVisitorDataDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreVisitorDataBatchSize",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Average Store Visitor Data Batch Size",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreVisitorDataBatchSize",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "SuccessfulRetrieveVisitorDataCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Successful Retrieve Visitor Data Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "SuccessfulRetrieveVisitorDataCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageSuccessfulRetrieveVisitorDataDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Successful Retrieve Visitor Data Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageSuccessfulRetrieveVisitorDataDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveLatestVisitorIdsCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Latest Visitor Ids Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveLatestVisitorIdsCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageRetrieveLatestVisitorIdsDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Retrieve Latest Visitor Ids Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageRetrieveLatestVisitorIdsDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitorDataRejectionCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visitor Data Rejection Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitorDataRejectionCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitorDataTimeoutCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visitor Data Timeout Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitorDataTimeoutCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitorDataMergeRetryCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visitor Data Merge Retry Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitorDataMergeRetryCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitorDataMergeErrorCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visitor Data Merge Error Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitorDataMergeErrorCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitorDataOtherErrorCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visitor Data Other Error Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitorDataOtherErrorCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveVisitorDataRejectionCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Visitor Data Rejection Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveVisitorDataRejectionCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveVisitorDataTimeoutCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Visitor Data Timeout Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveVisitorDataTimeoutCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveVisitorDataOtherErrorCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Visitor Data Other Error Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveVisitorDataOtherErrorCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveQueueSize",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Queue Size",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveQueueSize",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreQueueSize",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Queue Size",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreQueueSize",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visit Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreVisitDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Store Visit Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreVisitDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "StoreVisitsCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Store Visits Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "StoreVisitsCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageStoreVisitsDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Store Visits Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageStoreVisitsDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "GetVisitCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Get Visit Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "GetVisitCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageGetVisitDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Get Visit Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageGetVisitDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "GetVisitsCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Get Visits Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "GetVisitsCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageGetVisitsDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Get Visits Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageGetVisitsDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "ExecuteVisitQueryCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Execute Visit Query Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "ExecuteVisitQueryCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageExecuteVisitQueryDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Execute Visit Query Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageExecuteVisitQueryDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "VisitStatRetrieveIntervalCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Interval Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveIntervalCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "VisitStatAverageRetrieveIntervalDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Retrieve Interval Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageRetrieveIntervalDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "GetServingDataCounter",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Get Serving Data Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "GetServingDataCounter",
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageGetServingDataDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Get Serving Data Duration Millis",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitStat",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageGetServingDataDurationMillis",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MaxRetrieveThreads",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Max Retrieve Threads",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorService",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MaxRetrieveThreads",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MaxStoreThreads",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Max Store Threads",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorService",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MaxStoreThreads",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "VisitorServiceRetrieveQueueSize",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Queue Size",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorService",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveQueueSize",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "RetrieveTimeout",
+        "unit": "Count",
+        "displayname": "Hippo Targeting Retrieve Queue Size",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "com.onehippo.cms.targeting",
+        "keyProperties": {
+          "name": "VisitorService",
+          "type": "Targeting"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "RetrieveTimeout",
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MostRecentDurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Most Recent Duration Millis",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Targeting",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MostRecentDurationMillis",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "AverageLast100DurationMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo Targeting Average Last 100 Duration Millis",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "type": "Targeting",
+          "name": "*"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "AverageLast100DurationMillis",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    }
+  ],
+  "ui": {
+    "charts": [
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Request Log Store Entry",
+        "series": [
+          {
+            "key": "SuccessfulStoreEntryCounter",
+            "displayname": "Successful Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageStoreEntryDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          },
+          {
+            "key": "AverageStoreEntryDataBatchSize",
+            "displayname": "Average Data Batch Size",
+            "seriestype": "line",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Request Log Retrieve Entries",
+        "series": [
+          {
+            "key": "RetrieveEntriesCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageRetrieveEntriesDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Request Log Retrieve Interval",
+        "series": [
+          {
+            "key": "RetrieveIntervalCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageRetrieveIntervalDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Request Log Store Request Log",
+        "series": [
+          {
+            "key": "StoreRequestLogRejectionCounter",
+            "displayname": "Rejection Counter",
+            "seriestype": "bar",
+            "color": "#0000ff",
+            "stacked": true
+          },
+          {
+            "key": "StoreRequestLogTimeoutCounter",
+            "displayname": "Timeout Counter",
+            "seriestype": "bar",
+            "color": "#0000aa",
+            "stacked": true
+          },
+          {
+            "key": "StoreRequestLogOtherErrorCounter",
+            "displayname": "Other Error Counter",
+            "seriestype": "bar",
+            "color": "#000055",
+            "stacked": true
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Statistics Stat Local Persona",
+        "series": [
+          {
+            "key": "StoreLocalPersonaAverageCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageStoreLocalPersonaAverageDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Statistics Stat Shared Persona",
+        "series": [
+          {
+            "key": "RetrieveSharedPersonaAverageCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageRetrieveSharedPersonaAvarageDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visitor Stat Store",
+        "series": [
+          {
+            "key": "SuccessfulStoreVisitorDataCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "StoreQueueSize",
+            "displayname": "Queue Size",
+            "seriestype": "line",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageStoreVisitorDataDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          },
+          {
+            "key": "AverageStoreVisitorDataBatchSize",
+            "displayname": "Average Batch Size",
+            "seriestype": "line",
+            "color": "#ff0000"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visitor Stat Store Error",
+        "series": [
+          {
+            "key": "StoreVisitorDataRejectionCounter",
+            "displayname": "Rejection Counter",
+            "seriestype": "bar",
+            "color": "#0000ff",
+            "stacked": true
+          },
+          {
+            "key": "StoreVisitorDataTimeoutCounter",
+            "displayname": "Timeout Counter",
+            "seriestype": "bar",
+            "color": "#0000dd",
+            "stacked": true
+          },
+          {
+            "key": "StoreVisitorDataMergeRetryCounter",
+            "displayname": "Merge Retry Counter",
+            "seriestype": "bar",
+            "color": "#0000bb",
+            "stacked": true
+          },
+          {
+            "key": "StoreVisitorDataMergeErrorCounter",
+            "displayname": "Merge Error Counter",
+            "seriestype": "bar",
+            "color": "#ff0099",
+            "stacked": true
+          },
+          {
+            "key": "StoreVisitorDataOtherErrorCounter",
+            "displayname": "Other Error Counter",
+            "seriestype": "bar",
+            "color": "#000077",
+            "stacked": true
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Retrieve Stat Store",
+        "series": [
+          {
+            "key": "SuccessfulStoreVisitorDataCounter",
+            "displayname": "Successful Counter",
+            "seriestype": "bar",
+            "color": "#ff0000"
+          },
+          {
+            "key": "AverageSuccessfulRetrieveVisitorDataDurationMillis",
+            "displayname": "Average Successful Duration Millis",
+            "seriestype": "area",
+            "color": "#aa0000"
+          },
+          {
+            "key": "RetrieveLatestVisitorIdsCounter",
+            "displayname": "Ids Counter",
+            "seriestype": "bar",
+            "color": "#00ff00"
+          },
+          {
+            "key": "AverageRetrieveLatestVisitorIdsDurationMillis",
+            "displayname": "Average Ids Duration Millis",
+            "seriestype": "area",
+            "color": "#00aa00"
+          },
+          {
+            "key": "RetrieveQueueSize",
+            "displayname": "Average Batch Size",
+            "seriestype": "line",
+            "color": "#0000ff"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Retrieve Stat Store Error",
+        "series": [
+          {
+            "key": "RetrieveVisitorDataRejectionCounter",
+            "displayname": "Rejection Counter",
+            "seriestype": "bar",
+            "color": "#ff0000",
+            "stacked": true
+          },
+          {
+            "key": "RetrieveVisitorDataTimeoutCounter",
+            "displayname": "Timeout Counter",
+            "seriestype": "bar",
+            "color": "#dd0000",
+            "stacked": true
+          },
+          {
+            "key": "RetrieveVisitorDataOtherErrorCounter",
+            "displayname": "Other Error Counter",
+            "seriestype": "bar",
+            "color": "#bb0000",
+            "stacked": true
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Store Visit",
+        "series": [
+          {
+            "key": "StoreVisitCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageStoreVisitDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Store Visits",
+        "series": [
+          {
+            "key": "StoreVisitsCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageStoreVisitsDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Get Visit",
+        "series": [
+          {
+            "key": "GetVisitCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageGetVisitDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Get Visits",
+        "series": [
+          {
+            "key": "GetVisitsCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageGetVisitsDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Execute Visit Query",
+        "series": [
+          {
+            "key": "ExecuteVisitQueryCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageExecuteVisitQueryDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Retrieve Interval",
+        "series": [
+          {
+            "key": "VisitStatRetrieveIntervalCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "VisitStatAverageRetrieveIntervalDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visit Stat Get Serving Data",
+        "series": [
+          {
+            "key": "GetServingDataCounter",
+            "displayname": "Counter",
+            "seriestype": "bar",
+            "color": "#0000ff"
+          },
+          {
+            "key": "AverageGetServingDataDurationMillis",
+            "displayname": "Average Duration Millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Visitor Service",
+        "series": [
+          {
+            "key": "MaxRetrieveThreads",
+            "displayname": "Max Retrieve Threads",
+            "seriestype": "line",
+            "color": "#0000ff"
+          },
+          {
+            "key": "MaxStoreThreads",
+            "displayname": "Max Store Threads",
+            "seriestype": "line",
+            "color": "#0000aa"
+          },
+          {
+            "key": "VisitorServiceRetrieveQueueSize",
+            "displayname": "Retrieve Queue Size",
+            "seriestype": "line",
+            "color": "#000077"
+          },
+          {
+            "key": "RetrieveTimeout",
+            "displayname": "Retrieve Timeout",
+            "seriestype": "line",
+            "color": "#000033"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Targeting Stat JMX",
+        "title": "Data Flow Stat",
+        "series": [
+          {
+            "key": "MostRecentDurationMillis",
+            "displayname": "Most Recent Duration Millis",
+            "seriestype": "area"
+          },
+          {
+            "key": "AverageLast100DurationMillis",
+            "displayname": "Average Last 100 Duration Millis",
+            "seriestype": "line",
+            "color": "#0000ff"
+          }
+        ]
+      }
+    ]
+  }
+}

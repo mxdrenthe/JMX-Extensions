@@ -1,0 +1,563 @@
+{
+  "version": "1.0",
+  "name": "custom.jmx.hippo.session.pool",
+  "type": "JMX",
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "configUI": {
+    "displayName": "Hippo Session Pool JMX"
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "MaxIdle",
+        "unit": "Count",
+        "displayname": "Hippo session pool max idle",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MaxIdle",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "CurrentIdle",
+        "unit": "Count",
+        "displayname": "Hippo session pool idle",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumIdle",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MinIdle",
+        "unit": "Count",
+        "displayname": "Hippo session pool min idle",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MinIdle",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MaxActive",
+        "unit": "Count",
+        "displayname": "Hippo session pool max active",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MaxActive",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "CurrentActive",
+        "unit": "Count",
+        "displayname": "Hippo session pool active",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumActive",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MaxWait",
+        "unit": "MilliSecond",
+        "displayname": "Hippo session pool max wait",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MaxWait",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "MinEvictableIdleTimeMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo session pool Min Evictable Idle Time Millis",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "MinEvictableIdleTimeMillis",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumTestsPerEvictionRun",
+        "unit": "Count",
+        "displayname": "Hippo session pool Num Tests Per Eviction Run",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumTestsPerEvictionRun",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "SUM"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "TimeBetweenEvictionRunsMillis",
+        "unit": "MilliSecond",
+        "displayname": "Hippo session pool Time Between Eviction Runs Millis",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPool"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "TimeBetweenEvictionRunsMillis",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumSessionsCreated",
+        "unit": "Count",
+        "displayname": "Hippo session pool Sessions Created",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPoolCounter"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumSessionsCreated",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumSessionsActivated",
+        "unit": "Count",
+        "displayname": "Hippo session pool Sessions Activated",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPoolCounter"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumSessionsActivated",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumSessionsObtained",
+        "unit": "Count",
+        "displayname": "Hippo session pool Sessions Obtained",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPoolCounter"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumSessionsObtained",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumSessionsPassivated",
+        "unit": "Count",
+        "displayname": "Hippo session pool Sessions Passivated",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPoolCounter"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumSessionsPassivated",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumSessionsDestroyed",
+        "unit": "Count",
+        "displayname": "Hippo session pool Sessions Destroyed",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPoolCounter"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumSessionsDestroyed",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "MAX"
+      }
+    },
+    {
+      "timeseries": {
+        "key": "NumSessionsReturned",
+        "unit": "Count",
+        "displayname": "Hippo session pool Sessions Returned",
+        "dimensions": [
+          "rx_pid",
+          "name"
+        ]
+      },
+      "source": {
+        "domain": "org.onehippo.hst",
+        "keyProperties": {
+          "name": "*",
+          "type": "SessionPoolCounter"
+        },
+        "allowAdditionalKeys": false,
+        "attribute": "NumSessionsReturned",
+        "splitting": {
+          "name": "name",
+          "type": "keyProperty",
+          "keyProperty": "name"
+        },
+        "calculateDelta": true,
+        "calculateRate": true,
+        "aggregation": "MAX"
+      }
+    }
+  ],
+  "ui": {
+    "charts": [
+      {
+        "group": "Hippo Session Pool JMX",
+        "title": "Sessions",
+        "series": [
+          {
+            "key": "MaxActive",
+            "displayname": "Max active pool size",
+            "color": "#ff0000",
+            "seriestype": "line"
+          },
+          {
+            "key": "CurrentActive",
+            "displayname": "Active Sessions",
+            "seriestype": "area"
+          },
+          {
+            "key": "MaxIdle",
+            "displayname": "Max idle pool size",
+            "color": "#00ff00",
+            "seriestype": "line"
+          },
+          {
+            "key": "CurrentIdle",
+            "displayname": "Idle Session",
+            "seriestype": "area",
+            "color": "#ff6600"
+          },
+          {
+            "key": "MinIdle",
+            "displayname": "Idle Session",
+            "seriestype": "area",
+            "color": "#007700"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Session Pool JMX",
+        "title": "Evictable Idle",
+        "series": [
+          {
+            "key": "MinEvictableIdleTimeMillis",
+            "displayname": "Min evictable idle time millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Session Pool JMX",
+        "title": "Tests Per EvictionRun",
+        "series": [
+          {
+            "key": "NumTestsPerEvictionRun",
+            "displayname": "Num tests per eviction run",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Session Pool JMX",
+        "title": "Duration eviction runs",
+        "series": [
+          {
+            "key": "TimeBetweenEvictionRunsMillis",
+            "displayname": "Time between eviction runs millis",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Session Pool JMX",
+        "title": "Max wait",
+        "series": [
+          {
+            "key": "MaxWait",
+            "displayname": "Max wait",
+            "seriestype": "area"
+          }
+        ]
+      },
+      {
+        "group": "Hippo Session Pool JMX",
+        "title": "Counters",
+        "series": [
+          {
+            "key": "NumSessionsCreated",
+            "displayname": "Num Sessions Created",
+            "seriestype": "area",
+            "color": "#ff0000"
+          },
+          {
+            "key": "NumSessionsActivated",
+            "displayname": "Num Sessions Activated",
+            "seriestype": "area",
+            "color": "#770000"
+          },
+          {
+            "key": "NumSessionsObtained",
+            "displayname": "Num Sessions Obtained",
+            "seriestype": "area"
+          },
+          {
+            "key": "NumSessionsPassivated",
+            "displayname": "Num Sessions Passivated",
+            "seriestype": "area",
+            "color": "#007700"
+          },
+          {
+            "key": "NumSessionsDestroyed",
+            "displayname": "Num Sessions Destroyed",
+            "seriestype": "area",
+            "color": "#00ff00"
+          },
+          {
+            "key": "NumSessionsReturned",
+            "displayname": "Num Sessions Returned",
+            "seriestype": "area",
+            "color": "#003300"
+          }
+        ]
+      }
+    ]
+  }
+}
